@@ -107,11 +107,7 @@ void loop() {
   sumRoll=sumRoll+oneroll;
   
   n++;   
-  /*
-  zmienna n decyduje tez o taktowaniu wyswitlacza, po zebraniu okreslonej liczby probek ustalamy wszystkie rejestry,
-  i rysujemy z nowymi wartosciami, chodzi o przyspiesenie czasu potrzebnego na zebranie danych do usrednienia
-  i uzyskanie opoznienia od wyswietlacza jak najrzadziej, rysowanie interfejsu <42ms 
-  */  
+    
   if(n==probki){  
 //////////obliczenie sredniej///////////
     pitch=(sumPitch/probki)+pitchOffset; //obliczamy srednia z odczytow
