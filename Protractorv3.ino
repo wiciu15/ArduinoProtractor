@@ -126,12 +126,12 @@ void loop() {
     display.setTextSize(4);
     display.setCursor(28,16);   
   
-    if(abs(roll)<10){
+    if(abs(roll)<10){  //jezeli urzadzenie jest pochylone w osi Y (ekran nie jest pionowo) nie wyświetla wyniku
     display.print(abs(pitch),1);                 
     }
   
     else{
-        display.print("--.-");  //akcelerometr wyswietla wartosc kata tylko w jednej plaszczynie, jezeli urzadzenie jest pochylone 
+        display.print("--.-"); 
         }
       display.display();
       
