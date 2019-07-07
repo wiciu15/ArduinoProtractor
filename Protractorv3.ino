@@ -125,7 +125,7 @@ void loop() {
     display.drawFastVLine((sin(pitch*M_PI/180)*64)+64,4,6,WHITE); // zmienia przez po pozycja kreski bedzie bardziej czytelna
     display.drawFastVLine((sin(pitch*M_PI/180)*64)+65,4,6,WHITE);
     display.setTextSize(4);
-    display.setCursor(28,16);   //podpisy przy kreskach, pod y lub x podstawiamy rownanie w ktorej zmienna jest wartosc pitch lub roll 
+    display.setCursor(28,16);   
   
     if(abs(roll)<10){
     display.print(abs(pitch),1);                 
