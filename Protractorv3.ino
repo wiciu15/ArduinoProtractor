@@ -1,13 +1,12 @@
 /*
-Program wyswietla wartosci katow z zyroskopu na wyswietlaczu OLED w formie tekstu oraz poruszajacych sie linii.
-
-Plytka arduino komunikuje sie zarowno z wyswietlaczem jak i zyroskopem za pomoca magistrali I2C.
+Program wyswietla wartosci kata z akcelerometru na wyswietlaczu OLED w formie tekstu oraz poruszajacych sie linii.
 
 Pozycja linii oraz napisow obliczana jest co okreslona liczbe probek na podstawie sredniej z poprzednich n-odczytow
 Mozliwe jest rozszerzenie programu o filtr Kalmana lecz przeszkoda jest wyswietlacz zuzywajacy duzo czasu na rysowanie
 co uniemozliwia przecyzyjne filtrowanie gdyż potrzebny jest jak najmniejszy przyrost czasu dt
 
-Wiktor Burdecki 2018
+Wiktor Burdecki
+CC-BY 4.0
 */
 
 #include <Wire.h> //biblioteka I2C
